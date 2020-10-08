@@ -7,12 +7,13 @@
     <body>
         <?php
         include "./classes/employe.php";
+        include "./classes/projet.php";
         include "./includes/Traitement.php";
         
         try {
-            Traitement::instanciationUnEmploye();
-            Traitement::instanciationUnEmployeErreur();
-            Traitement::instanciationUnEmploye();
+            Traitement::instanciationUnEmploye(); ?> </br> <?php
+            //Traitement::instanciationUnEmployeErreur();
+            Traitement::instanciationProjetV1(); ?> </br> <?php
         } catch (Exception $ex) {
             echo $ex->getMessage();
         }

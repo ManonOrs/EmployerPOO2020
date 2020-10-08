@@ -10,5 +10,10 @@ class Traitement{
         $e= new employe(2, "Durand", "Sylvie", new DateTime("1987/06/14"), 800.00);
         echo $e;
     }
+    
+    public static function instanciationProjetV1() : void {
+        $p = new Projet ('PR7', 'Librairie Gelistout', 102);
+        echo $p;
+    }
 }
 
