@@ -6,7 +6,15 @@
     </head>
     <body>
         <?php
-        // put your code here
+        include "./classes/employe.php";
+        include "./includes/Traitement.php";
+        
+        try {
+            Traitement::instanciationUnEmploye();
+        } catch (Exception $ex) {
+            echo $ex->getMessage();
+        }
+                
         ?>
     </body>
 </html>
